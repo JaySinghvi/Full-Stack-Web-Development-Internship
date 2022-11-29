@@ -1,0 +1,44 @@
+<!--Methods to input statements in JS:
+1. window.prompt(): a prompt pop ups with a text box where you enter the text to be displayed on the screen
+2. window.confirm(): asks to confirm on the choice (like while shutting down laptop it asks you whether yes or no-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS input ways</title>
+    <script src="JSinputways.js"></script>
+</head>
+<body>
+
+    <!--method 1-->
+<p>please provide your food options</p>
+<h3 id="foodchoice"></h3>
+
+<script>
+    var foodoption = window.prompt()//here a text box appears where whatever you input get displayed on the webpage
+    element = document.getElementById("foodchoice");
+    element.innerHTML = foodoption;
+</script>
+
+<!--method 2-->
+<h1 id="loginuser"></h1>
+<script>
+    var isloggedin = window.confirm()//here a dialog box appears and if we click ok then it will display hi user else it will display bye user
+    element = document.getElementById("loginuser");//on clicking cancel button
+    console.log(isloggedin);
+    if(isloggedin == true){
+        element.innerHTML="Hi user!!"
+    }
+    else{
+        element.innerHTML="bye user!!"
+
+    }
+</script>
+
+
+    
+</body>
+</html>

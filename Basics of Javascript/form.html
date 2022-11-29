@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <!--here in form tag we provide heading of the form by adding "name = """ tag; 
+        we use event handling function "onsubmit = "function name"(which is defined in the js file) which will execute the function when form is submitted
+        and "method = """ is used to exchange date between client and server. here we are using "post" as we need to send data from client to server-->
+    <form name = "Sign up form" onsubmit="formvalidation()" method="post">
+        Name: <input type="text" name = "name"/><!--we use "name" attribute so it can be accessed in js-->
+    </br></br>
+        phone no.:<input type="text" name="phoneno."/>
+    </br></br>
+        <input type="submit" value="submit"/>
+
+
+    </form>
+</body>
+</html>

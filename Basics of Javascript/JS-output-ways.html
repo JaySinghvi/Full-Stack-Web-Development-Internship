@@ -1,0 +1,44 @@
+<!--There are 4 ways in which the ouput can be displayed in JS:
+1. innerHTML: writes data into certain html element (useful when the value needs to be chnaged based on the condition)
+2. document.write(): displays data in HTML output (useful when )
+3. window.alert(): displays data in alert box (useful when wants to give pop ups like during errors)
+4. console.log() displays data in browser console (not useful in real time)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS output methods</title>
+    <script src="JSoutputways.js"></script>
+</head>
+<body>
+    This is a JS demo
+
+    <!--innerHTML method-->
+    <p id ="para">I am a normal para</p><!--here we give this para a id so that we can modify it by using its reference id-->
+    <button onclick="innerHTMLfunc('para')">change para value</button>
+    <!--here we create a button and tell that upon clicking it should call the function in other file and here para is the value-->
+
+    <!--document.write() method-->
+    <h2>I am a para by method 2</h2>
+    <button onclick="documentwritefunc()">change para with document write</button>
+    <!--here only function name is needed, no id and any arguments and the text placed in the function using document.write
+        replaces all of the text on the webpage-->
+
+    </br></br>
+
+    <!--window.alert() method-->
+    <button onclick="windowalertfunc()">pop up display with window alert</button>
+    <!--here on clicking this button the message of function will be displayed in alert box and none of the text on the webpage will 
+        change-->
+
+    </br></br>
+
+    <!--console.log() method-->
+    <button onclick="consolelogfunc()">shows the message in the console of webpage</button>
+    <!--here on clicking this button the message will be displayed in the console of webpage which is accessed by doing 
+        right click on webpage and then going in inspect and then selecting the console-->
+</body>
+</html>

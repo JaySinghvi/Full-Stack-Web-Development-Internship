@@ -1,0 +1,58 @@
+<!--Javascript is used for adding implementation to the html elements like buttons, text, input fields, submit). It has no compilation step
+it is client side for front end; easy to learn node js(backend) and react js/angular(front end)
+MERN: mongo databse; express(server); react(front end); node js(back end)
+
+If we learn php then we have to learn another lang for frontend and not much support so js is best-->
+
+ <!--Including JS in html can be done in many methods:
+1. In head tag: used when user clicks on something and some logic needs to be executed
+2. in body tag: used when we don't want any action from user and the context is displayed immediately upon loading page
+3. in both head and body tag
+4. in external file and then import that file in this using the link
+
+Data types in JS are of 2 types:
+1. Primitive data types:- numbers, strings, boolean (basic)
+2. Reference data types:- objects, arrays, functions (derived based on basic/primitive datatypes)
+
+objects: group of other multiple members within the curly parantheses(just like structure in c).
+eg: emp = {id: 1, name:"ram", sal: 1000, display:(){body of function} } we can also add function in object where "display" is the keyword and the value is body of function
+
+arrays: basic datastructures which are loop of multiple members of similar datatypes
+eg: empname = ["ram", "rahul", "laxman", "riya"] this is string datatype
+    empid = [1,2,3,4] this is numbers datatype-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo</title>
+    <!--this is the function syntax just like in c we used to write function. the syntax is :function(which is the keyword) function-name(){alert("context")}
+       so hellojavascript is user defined function and alert is a predefined function-->
+    <script type="text/javascript">
+        function hellojavascript() 
+        {
+           alert("hello user welcome to the digital world") 
+        }
+    </script>
+
+<!--this is for method 4(external) for which we use src to link the external file-->
+    <script text="text/javascript" src="./method4(external).js"></script>
+
+</head>
+<body>
+    <!--document.write is another predefined function to print the context-->
+    <script type="text/javascript">
+        document.write("Hello welcome!!") 
+    </script>
+
+    <button type="button" onclick="hellojavascript()" style="background-color: orange">Welcome</button>
+    <!--so when the user clicks on button "welcome" the webpage will show the message written in the context for which we use onclick for method 1-->
+
+    <button type="button" onclick="external()" style="background-color: orange">Method 4</button><!--button for method 4-->
+    
+</body>
+</html>
