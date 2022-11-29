@@ -1,0 +1,36 @@
+<!--1. setTimeout(() => {it takes a callback function as an argument and write some logic in it 
+}, second argument is time in ms
+) so it executes the callback function after the time set has elapsed
+
+2. setInterval(()=> {same as above takes 2 arguments
+
+}, 
+)this function keeps executing the callback function after the time indicated has elapsed-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scheduling</title>
+</head>
+<body>
+    <h3>wait for 5 sec</h3>
+    <p id = "timeout"></p>
+
+    <p id = "interval"></p>
+
+    <script>
+        setTimeout(greet, 2000)//it can be called like this and format is (callback function, time)
+        function greet(elementId){
+            document.getElementById("timeout").innerHTML = "hello user"//after 5 sec this msg is displayed
+        }
+
+        setInterval(welcome, 3000)
+        function welcome(elementId){
+            document.getElementById("interval").innerHTML += " welcome back </br>"//we use += as we need to repeat this text after every 2 sec
+        }
+    </script>
+</body>
+</html>

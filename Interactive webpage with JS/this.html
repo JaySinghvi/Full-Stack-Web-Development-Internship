@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This uses</title>
+</head>
+<body>
+
+    <h1 id="this-event">this html element</h1>
+
+    <script>
+        function fn_simple_this(){
+            console.log(this)//1)used to show this as global object
+        }
+
+    this_event = document.getElementById("this-event")
+    /*this_event.addEventListener(//2) inside event handler
+         "click", function(){//so when we click on h1 tag it will be displayed in the console of inspect
+            console.log(this)//it prints the value of this object which is the h1 tag onclick
+         }
+    )*/
+
+    //3)to forcibly change the value of the this object inside event handler we use bind
+    /*this_event.addEventListener("click", fn_simple_this.bind({
+        name: "edureka",
+        course: "fullstack web dev"
+    }
+    )
+    )
+    fn_simple_this()//earlier upon clicking it was printing the h1 tag element but now clicking h1 tag we get the name and course printed
+                    //which are the object*/
+    
+    //4)incase of arrow functions
+    console.log(this)//prints global object
+    this_event.addEventListener("click", () => {
+        console.log(this)//prints global object even upon clicking on the h1 tag
+    })
+    fn_simple_this()
+
+    /*1)global access context: refers to global window object
+    2) event handlers: when accessed with event handler this object refers to html element itself
+    3) bind: using bind canc change value of this object
+    4) arrow functions: whenever accessed with arrows, this object referene is same as that of reference surrounding arrow function*/
+
+
+    </script>
+    
+</body>
+</html>

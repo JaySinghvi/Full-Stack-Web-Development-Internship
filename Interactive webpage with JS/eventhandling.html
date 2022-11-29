@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+    <script src="eventhandling.js"></script>
+    <script>
+        function mouseover(elementId){
+            elementId.innerHTML = ("mouse was moved in")
+        }
+
+        function mouseout(elementId){
+            elementId.innerHTML = ("mouse was moved out")
+        }
+    </script>
+</head>
+<body>
+    <button onclick="greet()">click me</button></br></br>
+    <textarea placeholder="mouse over" onmouseover="mouseover(document.getElementById('eventmessage'))"
+    onmouseout="mouseout(document.getElementById('eventmessage'))"></textarea></br></br>
+    <!--on mouseover we get the elemen(p tag) by the id assigned to it and on mouseout we again get a message using the same process -->
+
+    <!--as we are using document.write for mousehover so that replaces all of the text on webpage so to prevent that we are using this 
+        p tag and assigning it an id which we'll use so that the message does not replaces all of the text on webpage-->
+    <p id="eventmessage"></p>
+    
+</body>
+</html>

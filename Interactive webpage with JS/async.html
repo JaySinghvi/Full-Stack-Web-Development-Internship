@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //it is similar to promises but has better syntax than promises
+        //async: any function that is expected to return a promise
+
+      /*async function async(){
+             return "I am returning a promise";
+              }
+
+      console.log(async())*/
+
+      async function asyncawait(){
+                   let promisevar = new Promise(//promise takes callback function as argument and inside callback function we use settimeout
+                        (fulfilled,reject) =>{ 
+                             setTimeout(() => fulfilled("I am fulfilled"), 2000)
+                                       }
+                           )
+
+      let result = await promisevar//await keyword can only be used when the function is declared as async and until the promise function resolves it waits 
+      alert(result)
+     }
+    asyncawait()
+
+    </script>
+    
+</body>
+</html>
