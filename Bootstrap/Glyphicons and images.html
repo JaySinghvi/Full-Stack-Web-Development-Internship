@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  <!--these 3 links you need to remember as not available on net-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    <!--especially remember the no. for each like for these glyphicons it is -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> <!--3.4.0 for css; 3.6.0 for jquery and 3.4.0 for bootstrap-->
+    <title>Glyphicons and images</title>
+</head>
+<body>
+    <p>
+        Search restaurant nearby: <span class="glyphicon glyphicon-search"></span></br>
+        music: <span class="glyphicon glyphicon-music"></span></br>
+        facetime video: <span class="glyphicon glyphicon-facetime-video"></span></br>
+        picture: <span class="glyphicon glyphicon-picture"></span></br>
+        user: <span class="glyphicon glyphicon-user"></span></br>
+        trash: <span class="glyphicon glyphicon-trash"></span></br>
+        home: <span class="glyphicon glyphicon-home"></span>
+    </p>
+
+    <table class="table table-striped table-"><!--for this set the css to 4.5.2(latest version) so almost everytime use this only -->
+        <thead>
+            <tr class="table-primary"><!--these classes are used to make contextual tables-->
+                <th>Empno</th>
+                <th>Empname</th>
+                <th>Empdept</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-secondary">
+                <td>01</td>
+                <td>Emmanuel</td>
+                <td>CSE</td>
+            </tr>
+
+            <tr class="table-success">
+                <td>02</td>
+                <td>me</td>
+                <td>mech</td>
+            </tr>
+
+            <tr class="table-info">
+                <td>03</td>
+                <td>Epna</td>
+                <td>Empt</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--bootstrap typography-->
+    <div class="container">
+        <p class="font-weight-bold">This is typogrpahy demo</p>
+    </div>
+
+    <!--bootstrap images-->
+    <div>
+        plain img:<img src="./lunch.jpg" style="margin-left: 50px;"/></br></br>
+        rounded img:<img src="./lunch.jpg" style="margin-left: 50px;" class="rounded"/></br></br>
+        rounded-circle img:<img src="./lunch.jpg" style="margin-left: 50px;" class="rounded-circle"/></br></br>
+        img-thumbnail:<img src="./lunch.jpg" style="margin-left: 50px;" class="img-thumbnail"/></br></br>
+        img-responsive:<img src="./lunch.jpg" style="margin-left: 50px;" class="img-responsive"/>
+    </div>
+
+    <button type="button" class="btn btn-success">click me</button>
+    
+</body>
+</html>

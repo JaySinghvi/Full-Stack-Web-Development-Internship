@@ -1,0 +1,134 @@
+
+
+<!--Bootstrap (RWD: Responsive web design):- makes the website responsive and looks elegently or similar on all the devices
+            makes the development of webpage easy
+            
+Bootstrap can be added to project using 2 methods:-
+1. downloading bootstrap css and js files into project
+2. adding CDN liks in head tag (most preferred because it takes less storage and to get latest versions all the time)
+CDN links can be accessed from website getbootstrap.com-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/><!--this is the css link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script><!--this is the js link-->
+</head>
+<body>
+    <h1>Bootstrap demo</h1>
+    Solid buttons:-
+    <button type="button" class="btn btn-primary">primary</button>
+    <button type="button" class="btn btn-secondary">secondary</button>
+    <button type="button" class="btn btn-success">success</button>
+    <button type="button" class="btn btn-dark">dark</button>
+    <button type="button" class="btn btn-warning">warning</button>
+    <button type="button" class="btn btn-danger">danger</button>
+    <button type="button" class="btn btn-info">info</button>
+</br></br>
+    Lined buttons:-
+    <button type="button" class="btn btn-outline-primary">primary</button>
+    <button type="button" class="btn btn-outline-secondary">secondary</button>
+    <button type="button" class="btn btn-outline-success">success</button>
+    <button type="button" class="btn btn-outline-dark">dark</button>
+    <button type="button" class="btn btn-outline-warning">warning</button>
+    <button type="button" class="btn btn-outline-danger">danger</button>
+    <button type="button" class="btn btn-outline-info">info</button>
+
+    <!--no need to remember these classes as these can be searched on google by typing bootstrap button classes and click the thrird link-->
+
+    <!--Bootstrap form inputs (taken from internet..search for bootstrap input classes)-->
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+<br/><br/>
+    <!--Bootstap table classes (taken from net)-->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--In bootstrap there are 2 types of grids: 
+          1. container (comsumes only some spaces)  2. container-fluid(cousumes entire space)-->
+          <div class="container">Alright this is jay trying to learn bootstrap and this is a great experience to learn as this will help me in future to biuld somtething new </div>
+          <div class="container-fluid">Alright this is jay trying to learn bootstrap and this is a great experience to learn as this will help me in future to biuld somtething new </div>
+         <!-- (a row is by default divided into 12 columns and it is upto developer to choose column size)-->
+
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-4" style="background-color:aqua;height:100px"></div><!--we use col-4 coz we need 3 col and each row has 12 col so we need 4 col in each col-->
+                <div class="col-4" style="background-color:blanchedalmond;height:100px"></div>
+                <div class="col-4" style="background-color:rgb(255, 0, 43);height:100px"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-4" style="background-color:brown;height:100px"></div><!--we use col-4 coz we need 3 col and each row has 12 col so we need 4 col in each col-->
+                <div class="col-4" style="background-color:turquoise;height:100px"></div>
+                <div class="col-4" style="background-color:rgb(251, 255, 0);height:100px"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6" style="background-color:pink;height:100px"></div><!--we use col-6 coz we need 2 col and each row has 12 col so we need 6 col in each col-->
+                <div class="col-6" style="background-color:grey;height:100px"></div>
+             </div>
+
+        <!--to distribute it into 5 rows-->
+        <div class="container-fluid" style="margin-top:50px">
+        <div class="row">
+            <div class="col-1"></div><!--remove style so that the first and law column are not visible so we have 5 columns-->
+            <div class="col-2" style="background-color:blanchedalmond;height:100px"></div>
+            <div class="col-2" style="background-color:rgb(255, 0, 43);height:100px"></div>
+            <div class="col-2" style="background-color:rgb(43, 0, 255);height:100px"></div>
+            <div class="col-2" style="background-color:rgb(0, 255, 157);height:100px"></div>
+            <div class="col-2" style="background-color:rgb(255, 0, 230);height:100px"></div>
+            <div class="col-1"></div>
+         </div>
+        </div>
+         </div>
+
+</body>
+</html>
+
+
