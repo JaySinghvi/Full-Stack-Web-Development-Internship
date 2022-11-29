@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "nodemon": "^2.0.18"
+  },
+  "name": "fundamentals-of-backend",
+  "version": "1.0.0",
+  "main": "modules.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon module"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "description": ""
+}
